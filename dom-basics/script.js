@@ -112,8 +112,26 @@ ul.appendChild(li); // task 5
 let img= document.createElement("img");
 img.src="https://imgs.search.brave.com/EnJsVhXmIvL_CJ2ieoRe4iAeAkvRJ_yjm9BNbRhdwbM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9zb21l/LW15LW1vcm5pbmct/cGljdC0yNjI2NjA2/ODAuanBn"
 document.querySelector("div").prepend(img)// task 6
-*/
+
 
 let ul = document.querySelector("ul");
 let li= document.querySelector("li"); //slect the first li 
 ul.removeChild(li); ;   // task7
+
+let a = document.querySelectorAll("a");
+a.forEach(function(val){
+    val.href="https://www.google.com";
+}) // whenevr quertselector all mein ek sath valu change larni toh for each use karna hai (copy mein nhi hai)
+
+let abc = document.createElement("a");
+abc.href= "https://www.google.com";
+abc.innerText= "download now"
+document.querySelector("body").prepend(abc); // adding an a tag using create element (copy mein nhi hai)
+*/ 
+let all = document.querySelectorAll("p");
+all.forEach(function(val){
+    val.classList.add("fontsize"); // practicing 
+})
+
+
+
