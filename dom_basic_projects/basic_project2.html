@@ -22,16 +22,32 @@
         background-color: #222;
         display: flex;
         align-items: center;
-        justify-content: center;
-        letter-spacing: -1rem;
+        justify-content: center;  
     }
+    input{
+        display: none;
+    }
+   #btn{
+    padding: 14px 28px;
+    background-color: rgb(6, 130, 66);
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+   }
+   #btn:hover{
+        background-color: rgba(2, 81, 40, 0.962);
+   }
+
     
 </style>
 
 <body>
-<div id="main">
-   
+    <div id="main">
+    <input id="inp" type="file">
+   <div id="btn">
+    Upload File
+   </div>
 </div>
-<script src="basic_project1.js"></script>
+<script src="basic_project2.js"></script>
 </body>
 </html>
