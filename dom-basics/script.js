@@ -59,7 +59,7 @@ ul.addEventListener("click",function(dets){
 let ul = document.querySelector("ul");
 ul.addEventListener("click",function(dets){
    dets.target.classList.toggle("lt"); // class lagi hogi to click karne se hat jayegi aur hati hogi to click karne se lag jayegi 
-}) */
+}) 
 
 let a= document.querySelector(".a");
 let b= document.querySelector(".b");
@@ -78,4 +78,9 @@ true); //capture phase turned on
  });
     a.addEventListener("click",function(dets){
     console.log("a clicked")
-     }); 
+     }); */
+
+      let a = setInterval(function(){
+     console.log("hii");
+     },3000)
+     clearInterval(a);
