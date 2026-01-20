@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Glass Download UI</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+/* Glass container */
+.glass-box {
+    width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Progress background */
+.progress-container {
+    width: 100%;
+    height: 25px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Progress bar (controlled by JS later) */
+.progress-bar {
+    height: 100%;
+    width: 0%;                 /* JS will change this */
+    border-radius: 15px;
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.8),
+        rgba(0,255,255,0.8)
+    );
+    box-shadow: inset 0 0 6px rgba(255,255,255,0.9);
+      
+    position: relative;
+}
+
+/* Glass shine overlay (static, not moving) */
+.progress-bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 40px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-20deg);
+}
+
+.percent {
+    margin-top: 15px;
+    font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="glass-box">
+    <h2>Downloading...</h2>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="bar"></div>
+    </div>
+
+    <div class="percent" id="percent">0%</div>
+</div>
+<script src="basic_project7.js"></script>
+</body>
+</html>

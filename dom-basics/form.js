@@ -18,5 +18,15 @@ form.addEventListener("submit",function(dets){
      let ans =  regex.test("harhs_");
      console.log(ans);
 }); // code for checking with regex ... 
-*/
 
+let count = 10;
+let interval = setInterval(function(){
+    if(count>=1){
+        count -- 
+        console.log(count)
+    }
+    else{
+        clearInterval(interval);
+    }
+},1000); 
+*/
