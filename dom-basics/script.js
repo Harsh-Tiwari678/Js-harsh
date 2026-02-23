@@ -78,9 +78,28 @@ true); //capture phase turned on
  });
     a.addEventListener("click",function(dets){
     console.log("a clicked")
-     }); */
+     }); 
 
       let a = setInterval(function(){
      console.log("hii");
      },3000)
      clearInterval(a);
+
+
+
+---------------------------------------------------------------- local storage and session storage-----------------------------------*/
+
+
+// localStorage.setItem ("name", "harsh");   // storing  and saving data in local storage
+ 
+ //console.log(val1); // getting data from local storage
+  // removing data from local storage
+//  localStorage.setItem("name","harshia");
+//   let val = localStorage.getItem("name"); // getting data from local storage
+//   console.log(val); //
+
+
+// localStorage.setItem("fruits",JSON.stringify(["apple", "banana", "grapes"])); // storing array in local storage 
+//  let fr = JSON.parse(localStorage.getItem("fruits"));
+//  console.log(fr);  
+ 
