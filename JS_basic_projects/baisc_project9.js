@@ -102,7 +102,7 @@ showusers(user); // phli baar chalaya aur sare suers bhej diye
 let inp = document.querySelector(".search-input");
 inp.addEventListener("input", function(){
 let newusers = user.filter((user) =>{ 
-   return user.name.toLocaleLowerCase().startsWith(inp.value.toLocaleLowerCase())
+   return user.name.toLowerCase().startsWith(inp.value.toLowerCase())
 
 })
 showusers(newusers);  
