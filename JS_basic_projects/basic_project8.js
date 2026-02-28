@@ -13,4 +13,4 @@ btn.addEventListener("click",function(){
     document.body.classList.contains("dark-mode")?document.body.classList.remove("dark-mode")&&document.body.classList.add("light-mode") && localStorage.setItem("theme","light"):document.body.classList.add("dark-mode")&&doocument.body.classlist.remove("light-mode") && localStorage.setItem("theme","dark");
 })
 
-  // now the problem is ki ham last mein jis theme ke sath band kare tab ko us theme ke sa t hi vapas open ho 
+  // now the problem is ki ham last mein jis theme ke sath band kare tab ko us theme ke sa t hi vapas open ho - for this we use local storage 
