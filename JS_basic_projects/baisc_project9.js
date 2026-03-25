@@ -39,11 +39,10 @@ const user = [
         pic: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&auto=format&fit=crop&q=60",
         bio: "UI/UX designer passionate about user research"
     }
-];
+];// array of objects with sample data of users ..
 const container = document.querySelector(".cards-wrapper");
- // array of objects with sample data of users ..
+ 
 
-  
 const showusers = (arr) => { 
      container.innerHTML = "";  // first clear the container so that we can show the new users after filtering and avoid appending the new users to the old users                 
    
