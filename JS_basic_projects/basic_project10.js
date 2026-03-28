@@ -241,12 +241,27 @@ function showCards() {
 
 showCards(); 
 // page load hote hi jo bhi data localStorage me hai wo display ho jayega
+function updateStack(){  // function bnaya jiska naam hai update stack 
+ const cards =  document.querySelectorAll(".stack .cards"); // .stack ke andar jitne bhi .cards hai sabko select kiya ye ek node list jaisa structure return krega 
+ for(let i =0 ; i<cards.length ; i++ ){
+  const card = cards[i]; // ek ek karke cards nikal ke card vairable mein store kare rhe hai
+ card.style.zindex = 3-index; //zIndex decide karta hai kaunsa card upar hoga   sabse bada sabse upar 
+ card.style.transform = `translateY(${i*10}px) scale(${1-i*0.02})` // explanation in notebook 
+ card.style.opacity  = `${i-i*0.02}`; //transparency control
+// i = 0 → 1 (fully visible)
+// i = 1 → 0.9
+// i = 2 → 0.8
+ }
+ 
+ 
+}
  
 upBtn.addEventListener("click", function(){
  let lastChild = stack.lastElementChild // we got the last child 
  if(lastChild){
   stack.insertBefore(lastChild,stack.firstElementChild)
-  // update krna hai code upar hai 
+  // update krna hai code upar hai
+  updateStack(); 
  }
 }); 
  downBtn.addEventListener("click",function(){
@@ -254,5 +269,6 @@ upBtn.addEventListener("click", function(){
   if(firstChild){
     stack.appendChild(firstChild);
     // update krna hai code upar hai 
+    updateStack();
   }
  });
