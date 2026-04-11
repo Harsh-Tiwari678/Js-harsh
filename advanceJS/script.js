@@ -47,3 +47,28 @@
 
 
         
+    // ----- closure example 3(Encalpsulation)
+    
+    clickLimiter = ()=>{
+        let likes = 0; // this variable is private to clickLimiter function and can only be accessed by the inner function which is returned    
+        return()=>{
+            if(likes<5){
+                likes++;
+                console.log(`likes count is ${likes}`)
+            }
+            else{
+                console.error("you have reached the limit")
+            }
+        }
+    }
+      let fnc = clickLimiter();
+        fnc(); // 1
+        fnc(); // 2
+        fnc();// 3
+        fnc(); //
+        fnc(); // 5
+        fnc(); // you have reached the limit
+        fnc(); // you have reached the limit    
+     
+
+      
