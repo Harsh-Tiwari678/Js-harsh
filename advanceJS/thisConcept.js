@@ -69,12 +69,26 @@ console.log(this); // window object will be printed
 // add.call(obj);// here now this  = obj 
  
 // call 2-------------------
- let obj = {
-      name : "harsh",
-       age : 18,
-};
+//  let obj = {
+//       name : "harsh",
+//        age : 18,
+// };
+//apply-------------
+// function add(a,b,c){
+//  console.log(this.age,a,b,c); // here this will refer to the object on which the function is called
+// }
+// add.apply(obj,[1,2,3]);
 
-function add(a,b,c){
- console.log(this.age,a,b,c); // here this will refer to the object on which the function is called
-}
-add.call(obj,1,2,3);
+//bind-------------
+// let obj = {
+//       name : "harsh",
+//        age : 18,
+// };
+// function add(a,b,c){
+//  console.log(this.age,a,b,c); // here this will refer to the object on which the function is called
+// }
+// let fnc = add.bind(obj,1,2,3); 
+// fnc();
+  
+
+
