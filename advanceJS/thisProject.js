@@ -27,7 +27,7 @@ const userManager = {
    },
    renderUi : function(){
       document.querySelector(".users").innerHTML = ""; // khali kiya html ko
-    this.user.forEach((user)=> {// ek ek karke sare users aa rhe hai 
+    this.user.forEach((user)=> {// ek ek karke sare users aa rhe hai // use arrow fuction bcs i have to preserve this 
       const card = document.createElement("div"); // div create hua hai 
       card.addEventListener("click",()=>{  // har card pe click listerner laga hai .. jab click kare user ka id pass ho rha hai .. for remove user call ho rha hai 
         this.removeUser(user.id);       
