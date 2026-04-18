@@ -70,7 +70,7 @@ const userManager = {
   },
    
    removeUser : function(id){
-    this.user = this.user.filter((u)=>u.id !== id); // this.user pura array hai , filter naya array deta hai // lop chala rha hai pure user araay pe // lets say card 2 pe click hua sp card2 ki id agar match kar gyi to remove ho jayega 
+    this.user = this.user.filter(()=>u.id !== id); // this.user pura array hai , filter naya array deta hai // lop chala rha hai pure user araay pe // lets say card 2 pe click hua sp card2 ki id agar match kar gyi to remove ho jayega 
     this.renderUi(); // vapas render kar rhe hai to update the ui 
    }
 }
