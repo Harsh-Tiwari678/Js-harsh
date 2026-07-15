@@ -124,3 +124,17 @@ console.log(ans)
 // }
 // const ans = createuser("harsh","harshtiwari1806@gmail.com");
 // console.log(ans)
+
+
+
+// call stack 
+
+
+first = ()=>{
+    Second();
+    console.log("hey this is  first")
+}
+Second = () =>{
+console.log("hey this is second")
+}
+first();
