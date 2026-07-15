@@ -50,3 +50,31 @@
 //     autheticated : true,
 
 // }
+
+
+
+//arrays :
+
+// arrays of objects :
+
+// const users = [
+//     {
+//         name : "Harsh",
+//         id : 1,
+//     },
+//     {
+//         name : "Piyush",
+//         id : 2,
+//     },
+//     {
+//         name : "Madhav",
+//         id : 3,
+//     },
+// ]
+// console.log(users[0].name)
+
+
+const endpoints = [
+    "/login", "/register", "/produts"
+]
+console.log(endpoints[0])
