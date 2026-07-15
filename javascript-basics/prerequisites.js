@@ -74,7 +74,53 @@
 // console.log(users[0].name)
 
 
-const endpoints = [
-    "/login", "/register", "/produts"
-]
-console.log(endpoints[0])
+// const endpoints = [
+//     "/login", "/register", "/produts"
+// ]
+// console.log(endpoints[0])
+
+ 
+
+// functions :
+
+// greet = (name)=>{
+//     return `welcome ${name}`;
+// }
+// console.log(greet("harsh"))
+
+
+// isvalid = (age)=>{
+//     return age>=18 
+// }
+// console.log(isvalid(34))
+
+
+// apiresponse = (success,data) =>{
+//     return {
+//         success,
+//         data,
+//     }
+// }
+// const responce = apiresponse( true,
+//      {
+//         id  : 101,
+//         name : "Harsh",
+//     },
+// )
+// console.log(responce)
+
+isValid = (roles)=>{
+      return  roles === "admin" 
+}
+const ans = isValid("user")
+console.log(ans)
+
+
+// createuser  =  (name,email)=>{
+//     return{
+//         name,
+//         email,
+//     }
+// }
+// const ans = createuser("harsh","harshtiwari1806@gmail.com");
+// console.log(ans)
