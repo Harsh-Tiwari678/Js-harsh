@@ -109,11 +109,11 @@
 // )
 // console.log(responce)
 
-isValid = (roles)=>{
-      return  roles === "admin" 
-}
-const ans = isValid("user")
-console.log(ans)
+// isValid = (roles)=>{
+//       return  roles === "admin" 
+// }
+// const ans = isValid("user")
+// console.log(ans)
 
 
 // createuser  =  (name,email)=>{
@@ -132,9 +132,13 @@ console.log(ans)
 
 first = ()=>{
     Second();
-    console.log("hey this is  first")
+    console.log("hey this is  first");
 }
+  
+
 Second = () =>{
-console.log("hey this is second")
+console.log("hey this is second");
 }
+
 first();
+
