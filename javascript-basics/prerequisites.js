@@ -210,3 +210,25 @@
 // console.log(data)
 // })
 
+//.catch()
+
+// const promise = new Promise((resolve,reject)=>{
+//    reject("Database Crashed")
+// })
+
+// promise.catch((data)=>{
+// console.log(data)
+// })
+
+
+const login =  (email,password)=>{
+ return new Promise((resolved,reject)=>{
+   email==="admin@gmail.com" && password === "123456"? resolved("login succesfull") : reject("Wronng Credntials")
+ })
+}
+login("admin@gmail.com","123456")
+.then((data)=>{
+console.log(data)
+}).catch((data)=>{
+   console.log(data)
+})
