@@ -169,14 +169,44 @@
 // })
 
 
-runjob = (jobname,callback)=>{
-    console.log("Runiing: Upload File")
+// runjob = (jobname,callback)=>{
+//     console.log("Runiing: Upload File")
 
-    callback();
-}
+//     callback();
+// }
 
-end = ()=>{
-    console.log("the callback is now executed")
-}
+// end = ()=>{
+//     console.log("the callback is now executed")
+// }
 
-runjob('SWE',end)
+// runjob('SWE',end)
+
+
+
+// Promices 
+
+// const promise = new Promise((resolve,reject)=>{
+//     resolve({
+//         user : "Harsh",
+//         future : "Google fwinter fellowship winner",
+//     })
+// })   // here the promise state will go from pending to fullfiled 
+//  promise.then((data)=>{
+//     console.log(data.future)
+//  })
+
+// finduser = (id)=>{
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>{
+//             resolve({
+//                 name:"Harsh",
+                
+//             }
+//             )
+//         },5000)
+//     })
+// }
+// finduser(1).then((data)=>{
+// console.log(data)
+// })
+
