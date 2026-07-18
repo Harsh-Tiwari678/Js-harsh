@@ -130,15 +130,53 @@
 // call stack 
 
 
-first = ()=>{
-    Second();
-    console.log("hey this is  first");
-}
+// first = ()=>{
+//     Second();
+//     console.log("hey this is  first");
+// }
   
 
-Second = () =>{
-console.log("hey this is second");
+// Second = () =>{
+// console.log("hey this is second");
+// }
+
+// first();
+
+//callback 
+
+
+// greet = (name,callback)=>{
+//  console.log(`hello ${name}`)
+//  callback();
+// }
+
+// done = ()=>{
+//     console.log("the callback is succesfully called");
+// }
+// greet("Harsh", done);
+
+
+// getuser = (id,callback)=>{
+// setTimeout(()=>{
+// callback({
+//     id,
+//     name : "Harsh",
+// })
+// },5000)
+// }
+// getuser(1,(user)=>{
+// console.log(user)
+// })
+
+
+runjob = (jobname,callback)=>{
+    console.log("Runiing: Upload File")
+
+    callback();
 }
 
-first();
+end = ()=>{
+    console.log("the callback is now executed")
+}
 
+runjob('SWE',end)
