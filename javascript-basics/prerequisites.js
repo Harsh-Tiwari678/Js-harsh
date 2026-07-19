@@ -236,20 +236,39 @@
 
 //finally block in succes :
 
-Promise.resolve("the work is done")
-.then((data)=>{
-console.log(data)
-})
-.finally(()=>{
-console.log("finished ")
-})
+// Promise.resolve("the work is done")
+// .then((data)=>{
+// console.log(data)
+// })
+// .finally(()=>{
+// console.log("finished ")
+// })
 
 
-//finally block in error :
+// //finally block in error :
 
-Promise.reject("the promise is now rejected")
-.catch((err)=>{
-  console.log(err);
-}).finally(()=>{
-  console.log("the finally block runs anyhow")
-})
+// Promise.reject("the promise is now rejected")
+// .catch((err)=>{
+//   console.log(err);
+// }).finally(()=>{
+//   console.log("the finally block runs anyhow")
+// })
+
+
+
+//await 
+//   greet =  async (name)=>{
+//   return `${name} Welcome`
+//  }
+//  const ans = greet('harsh')
+//  console.log(ans)
+
+
+// demo = async()=>{
+//   console.log('A')
+//   await Promise.resolve()
+//   console.log('B')
+// }
+// console.log('C')
+// demo();
+
