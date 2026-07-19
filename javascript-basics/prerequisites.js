@@ -221,14 +221,35 @@
 // })
 
 
-const login =  (email,password)=>{
- return new Promise((resolved,reject)=>{
-   email==="admin@gmail.com" && password === "123456"? resolved("login succesfull") : reject("Wronng Credntials")
- })
-}
-login("admin@gmail.com","123456")
+// const login  = (email,password)=>{
+//   return new Promise((resolve , reject)=>{
+//    email === "admin@123" && password === "123456" ? resolve("Login Succesfull") : reject("Invalid Cridentials")
+//   })
+
+//   }
+//   login("harshtiwari@123","123456").then((data)=>{
+// console.log(data);
+//   }).catch((err)=>{
+// console.log(err)
+//   })
+
+
+//finally block in succes :
+
+Promise.resolve("the work is done")
 .then((data)=>{
 console.log(data)
-}).catch((data)=>{
-   console.log(data)
+})
+.finally(()=>{
+console.log("finished ")
+})
+
+
+//finally block in error :
+
+Promise.reject("the promise is now rejected")
+.catch((err)=>{
+  console.log(err);
+}).finally(()=>{
+  console.log("the finally block runs anyhow")
 })
