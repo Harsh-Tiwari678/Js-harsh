@@ -272,3 +272,14 @@
 // console.log('C')
 // demo();
 
+
+//await special behaviour ---
+
+greet = async()=>{
+    return 21;
+}
+main = async()=>{
+    const result =  await greet();
+    console.log(result); // i will get the value of promise which is 21 here 
+}
+main();
