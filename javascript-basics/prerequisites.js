@@ -275,11 +275,22 @@
 
 //await special behaviour ---
 
-greet = async()=>{
-    return 21;
-}
-main = async()=>{
-    const result =  await greet();
-    console.log(result); // i will get the value of promise which is 21 here 
-}
-main();
+// greet = async()=>{
+//     return 21;
+// }
+// main = async()=>{
+//     const result =  await greet();
+//     console.log(result); // i will get the value of promise which is 21 here 
+// }
+// main();
+
+
+//Promise.all and Promise.setelled
+
+const result = await Promise.allSettled([
+    Promise.resolve("User"),
+    Promise.reject("Database Quer"),
+    Promise.resolve("Work done ")
+])
+
+console.log(result);
