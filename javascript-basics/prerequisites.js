@@ -307,7 +307,16 @@
 
 // what if the first promsie  rejects ?
 
-const result =  await Promise.race([
-    Promise.reject("Database Error"),
-])
-console.log(result);
+// const result =  await Promise.race([
+//     Promise.reject("Database Error"),
+// ])
+// console.log(result);
+
+//Promise.any-----  first promise which get's fullfiled wins -- if no one get's fullfiled through a aggregate error which contains all the rejection reasons 
+ const result = await  Promise.any([
+    Promise.reject("A"),
+     Promise.resolve("B"),
+      Promise.reject("C"),
+ ])
+ console.log(result)
+ 
