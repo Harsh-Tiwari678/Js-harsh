@@ -313,10 +313,73 @@
 // console.log(result);
 
 //Promise.any-----  first promise which get's fullfiled wins -- if no one get's fullfiled through a aggregate error which contains all the rejection reasons 
- const result = await  Promise.any([
-    Promise.reject("A"),
-     Promise.resolve("B"),
-      Promise.reject("C"),
- ])
- console.log(result)
+//  const result = await  Promise.any([
+//     Promise.reject("A"),
+//      Promise.resolve("B"),
+//       Promise.reject("C"),
+//  ])
+//  console.log(result)
  
+// Destructuring --- way to EXTRACT the value of arrays and objects into a seperate variable 
+// before Destructuring ---------
+// const obj = {
+//     name : "Harsh",
+//     age : 19,
+//     id : 101,
+// }
+// const name = obj.name ;
+// const age = obj.age;
+// const id =  obj.id;
+// console.log(name,age,id);
+//after -------
+
+
+
+// const obj = {
+//     name : "Harsh",
+//     age : 19,
+//     id : 101,
+//     salary : 200000,
+    
+// }
+
+// const{name : fname,id , salary = 100000} = obj;   // renaming the property and setting the default value 
+// console.log(fname,id, salary);
+
+//nested object 
+
+// const obj = {
+//     name : "Harsh",
+//     id : 101,
+//     adress : {
+//         name1: "gurugram",
+//         time : 12,
+//     }
+// }
+// const{name, adress : {name1}} = obj;
+// console.log(name1, name)
+
+//fumnction destructuring 
+// const obj ={
+//     name : "Harsh",
+//     id : 1,
+// }
+
+// createusers = ({name,id})=>{
+//     console.log(obj.name);
+//     console.log(obj.id);
+// }
+// createusers(obj)
+
+//array 
+
+// const arr = [1,2,34,5,6];
+// const[first , , , fourth, ,] = arr;
+// console.log(first);
+// console.log(fourth);
+
+//swapping
+let a = 18;
+let b = 34;
+[a,b] = [b,a];
+console.log(a,b);
