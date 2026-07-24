@@ -287,10 +287,27 @@
 
 //Promise.all and Promise.setelled
 
-const result = await Promise.allSettled([
-    Promise.resolve("User"),
-    Promise.reject("Database Quer"),
-    Promise.resolve("Work done ")
-])
+// const result = await Promise.allSettled([
+//     Promise.resolve("User"),
+//     Promise.reject("Database Quer"),
+//     Promise.resolve("Work done ")
+// ])
 
+// console.log(result);
+
+
+// const result  = await Promise.race([
+//     Promise.resolve("A"),
+//      Promise.resolve("B"),
+//       Promise.resolve("C"),
+//        Promise.resolve("D"),
+// ])
+// console.log(result);
+
+
+// what if the first promsie  rejects ?
+
+const result =  await Promise.race([
+    Promise.reject("Database Error"),
+])
 console.log(result);
