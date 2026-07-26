@@ -473,10 +473,33 @@
 // }))
 // console.log(ans);
 
-const numbers = [1, 2, 3];
+// const numbers = [1, 2, 3];
 
-const result = numbers.map(num => {
-    console.log(num);
-});
+// const result = numbers.map(num => {
+//     console.log(num);
+// });
 
+// console.log(result);
+
+
+
+//reduce 
+
+
+const orders = [
+    {
+        price: 100
+    },
+    {
+
+        price: 200
+    },
+    {
+        price: 300
+    }
+];
+
+const result = orders.reduce((total,order)=>{
+    return total+order.price;
+},0)
 console.log(result);
