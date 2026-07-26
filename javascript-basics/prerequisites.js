@@ -379,7 +379,104 @@
 // console.log(fourth);
 
 //swapping
-let a = 18;
-let b = 34;
-[a,b] = [b,a];
-console.log(a,b);
+// let a = 18;
+// let b = 34;
+// [a,b] = [b,a];
+// console.log(a,b);
+
+
+//spread 
+
+// const Frontend = ["React" , "Next.js"];
+// const Backend = ["Django", "Node.js"];
+// const newrr = [...Frontend , ...Backend]
+// console.log(newrr);
+
+
+//map
+
+// const input   =  [1,2,3,4,5];
+// const ans = input.map( function(i){
+//     return i*3;
+// });
+// console.log(ans);
+
+
+// const arr =  [1,2,3,4,5];
+
+// function transformaion(i){
+//     console.log(i*3);
+// }
+// function mapp(arr,transformaion){
+//   for(let i  = 0 ; i<arr.length ; i++){
+//   transformaion(arr[i]);
+//   }
+// }
+// mapp(arr,transformaion);
+
+// const arr = [1,2,3,4,5,6];
+// const newarr = [];
+// for(let i = 0 ; i<arr.length; i++){
+//     if (arr[i]%2==0){
+//         newarr.push(arr[i]);
+//     }
+// }
+// console.log(newarr)
+
+
+// const arr = ["Harsh", "Madhav", "Piyush"];
+// const ans = arr.filter(function(i){
+//     if(i.startsWith("M")){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// })
+// console.log(ans);
+
+// const arr = [1,2,3,4,5]
+// const newarr = [];
+// transform = (i)=>{
+// return i*3;
+// }
+// map = (arr,transform)=>{
+//  for(let i  = 0 ; i<arr.length ; i++){
+//     newarr.push(transform(arr[i]))
+
+//  }
+// }
+// map(arr,transform)
+// console.log(newarr);
+
+// const safeuser = [1,2,3,4,5];
+
+// const ans =  safeuser.map(num=>num*2);
+// console.log(ans);
+
+
+
+// const products = [
+//     {
+//         name: "Laptop",
+//         price: 50000
+//     },
+//     {
+//         name: "Phone",
+//         price: 20000
+//     }
+// ];
+
+// const ans = products.map(product=>({
+//     ...product,
+//     price : product.price*1.18,
+// }))
+// console.log(ans);
+
+const numbers = [1, 2, 3];
+
+const result = numbers.map(num => {
+    console.log(num);
+});
+
+console.log(result);
