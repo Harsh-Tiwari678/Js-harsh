@@ -486,20 +486,25 @@
 //reduce 
 
 
-const orders = [
-    {
-        price: 100
-    },
-    {
+// const orders = [
+//     {
+//         price: 100
+//     },
+//     {
 
-        price: 200
-    },
-    {
-        price: 300
-    }
-];
+//         price: 200
+//     },
+//     {
+//         price: 300
+//     }
+// ];
 
-const result = orders.reduce((total,order)=>{
-    return total+order.price;
-},0)
-console.log(result);
+// const result = orders.reduce((total,order)=>{
+//     return total+order.price;
+// },0)
+// console.log(result);
+
+//import ----
+
+import {add} from "./export.js"
+console.log(add(2,4));
